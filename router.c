@@ -49,7 +49,7 @@ int main(int argc, char *argv[])
 	struct route_table_entry *rtable = malloc(sizeof(struct route_table_entry) * 100000);
 	int rtablesize = read_rtable(argv[1], rtable);
 
-	//LPM qsort care probabil nu face ce trebuie
+	//LPM qsort
 	//qsort(rtable, rtablesize, sizeof(struct route_table_entry), cmpfunc);
 
 	//Adresa de Broadcast 
